@@ -1,5 +1,13 @@
+import Navbar from "../components/Navbar"
+
+
 export default function Home() {
   return (
-    <div>Working!</div>
+    <div>
+      <Navbar />
+      <div>
+        Home!
+      </div>
+    </div>
   );
 }
