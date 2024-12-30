@@ -8,6 +8,10 @@
   font: 1rem/1.5 system-ui, sans-serif;
 }
 
+body {
+  background: rgb(224 242 254);
+}
+
 
 @layer base {
   :root {

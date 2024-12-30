@@ -24,7 +24,7 @@ const Navbar = () => {
                             <NavigationMenuLink className={`font-medium hover:text-white ${pathname === '/' ? 'text-white' : 'text-sky-200'}`}>Home</NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
-                    <div className="border-l border-sky-100 h-6 self-center"></div>
+                    <div className="border-l border-sky-200 h-6 self-center"></div>
                     <NavigationMenuItem>
                         <Link href="/stopwatch" legacyBehavior passHref>
                             <NavigationMenuLink className={`font-medium hover:text-white ${pathname === '/stopwatch' ? 'text-white' : 'text-sky-200'}`}>
@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="ml-auto text-sky-100 hover:text-white hover:cursor-pointer">
+            <div className="ml-auto text-sky-200 hover:text-white hover:cursor-pointer">
                 <Link href="https://www.instagram.com/a.torre98/" target="_blank" >
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
