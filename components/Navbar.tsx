@@ -7,11 +7,10 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Instagram } from "lucide-react";
+import { prefix } from "@/lib/utils";
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -37,7 +36,7 @@ const Navbar = () => {
 
             <div id="logo" className="absolute left-1/2 transform -translate-x-1/2">
                 <Image
-                    src="/logo.png"
+                    src={`${prefix}/logo.png`}
                     alt="Logo"
                     width={32}
                     height={32}
