@@ -16,8 +16,8 @@ import { Instagram } from "lucide-react";
 const Navbar = () => {
     const pathname = usePathname();
     return (
-        <NavigationMenu className="w-full min-w-full h-16 bg-sky-800 px-8 py-3 shadow-md">
-            <div className="flex justify-between items-center">
+        <NavigationMenu className="w-full flex justify-between min-w-full h-16 bg-sky-800 px-8 py-3 shadow-md">
+            <div className="flex justify-between items-center" id="links">
                 <NavigationMenuList className="flex space-x-4">
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
@@ -35,8 +35,16 @@ const Navbar = () => {
                 </NavigationMenuList>
             </div>
 
+            <div id="logo" className="absolute left-1/2 transform -translate-x-1/2">
+                <Image
+                    src="/logo.png"
+                    alt="Logo"
+                    width={32}
+                    height={32}
+                />
+            </div>
 
-            <div className="ml-auto text-sky-200 hover:text-white hover:cursor-pointer">
+            <div className="text-sky-200 hover:text-white hover:cursor-pointer" id="socials">
                 <Link href="https://www.instagram.com/a.torre98/" target="_blank" >
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">

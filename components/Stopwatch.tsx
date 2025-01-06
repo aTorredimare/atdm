@@ -3,12 +3,12 @@ import Navbar from './Navbar'
 
 const Stopwatch = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <div>
+      <div className="flex flex-col mt-16 items-center h-screen">
         Stopwatch!
       </div>
-    </div>
+    </>
   )
 }
 

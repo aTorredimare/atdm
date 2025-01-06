@@ -3,7 +3,9 @@ import Stopwatch from '../../components/Stopwatch'
 
 const page = () => {
   return (
-    <Stopwatch/>
+    <div >
+      <Stopwatch />
+    </div>
   )
 }
 
