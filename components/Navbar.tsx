@@ -11,6 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { prefix } from "@/lib/utils";
+import { AiOutlineHome } from 'react-icons/ai';
+import { BiStopwatch } from 'react-icons/bi';
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -20,14 +22,18 @@ const Navbar = () => {
                 <NavigationMenuList className="flex space-x-4">
                     <NavigationMenuItem>
                         <Link href="/" legacyBehavior passHref>
-                            <NavigationMenuLink className={`font-medium hover:text-white ${pathname === '/' ? 'text-white' : 'text-sky-200'}`}>Home</NavigationMenuLink>
+                            <NavigationMenuLink className={`font-medium hover:text-white ${pathname === '/' ? 'text-white' : 'text-sky-200'}`}>
+                                <AiOutlineHome className="md:hidden text-xl" />
+                                <span className="hidden md:inline">Home</span>
+                            </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
                     <div className="border-l border-sky-200 h-6 self-center"></div>
                     <NavigationMenuItem>
                         <Link href="/stopwatch" legacyBehavior passHref>
                             <NavigationMenuLink className={`font-medium hover:text-white ${pathname === '/stopwatch' ? 'text-white' : 'text-sky-200'}`}>
-                                Stopwatch
+                                <BiStopwatch className="md:hidden text-xl" />
+                                <span className="hidden md:inline">Stopwatch</span>
                             </NavigationMenuLink>
                         </Link>
                     </NavigationMenuItem>
